@@ -1,0 +1,53 @@
+{
+  "name": "@agents-mcp/spec",
+  "version": "0.1.0",
+  "description": "Canonical spec for Agent MCP providers — terminal orchestration, agent coordination, and multi-agent collaboration",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./capabilities/*": {
+      "types": "./dist/capabilities/*.d.ts",
+      "import": "./dist/capabilities/*.js"
+    },
+    "./conformance": {
+      "types": "./dist/conformance/runner.d.ts",
+      "import": "./dist/conformance/runner.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "mcp",
+    "agent",
+    "multi-agent",
+    "terminal",
+    "orchestration",
+    "protocol",
+    "spec"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "dist",
+    "spec",
+    "README.md",
+    "LICENSE"
+  ]
+}
