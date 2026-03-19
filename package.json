@@ -33,7 +33,7 @@
     "protocol",
     "spec"
   ],
-  "license": "Apache-2.0",
+  "license": "PolyForm-Strict-1.0.0",
   "dependencies": {
     "zod": "^3.24.0"
   },

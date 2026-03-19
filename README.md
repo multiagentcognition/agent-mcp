@@ -245,4 +245,4 @@ How existing providers map to spec capabilities:
 
 ## License
 
-Apache 2.0
+[PolyForm Strict 1.0.0](LICENSE)
